@@ -1,5 +1,6 @@
 package com.marllon.kneemod;
 
+import com.marllon.kneemod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,7 +12,7 @@ public class KneeSurgery implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-//mee tppp
+		ModItems.registerModItems();
 
 	}
 }
