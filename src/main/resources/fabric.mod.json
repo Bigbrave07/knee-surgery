@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "kneemod",
+	"version": "${version}",
+	"name": "Knee Surgery",
+	"description": "When knee surgery is tomorrow",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/kneemod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.marllon.kneemod.KneeSurgery"
+		],
+		"fabric-datagen": [
+			"com.marllon.kneemod.KneeSurgeryDataGenerator"
+		],
+		"client": ["com.marllon.kneemod.KneeSurgeryClient"]
+	},
+	"mixins": [
+		"kneemod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.3",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
