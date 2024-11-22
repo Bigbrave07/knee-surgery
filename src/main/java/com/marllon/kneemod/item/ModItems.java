@@ -1,6 +1,7 @@
 package com.marllon.kneemod.item;
 
 import com.marllon.kneemod.KneeSurgery;
+import net.fabricmc.fabric.api.item.v1.FabricItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -17,6 +18,9 @@ public class ModItems {
 
     public static final Item PINK_GARNET = registerItem("pink_garnet", Item::new);
     public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet", Item::new);
+
+
+
     private static Item registerItem(String name, Function<Item.Settings, Item> function) {
         return Registry.register(Registries.ITEM, Identifier.of(KneeSurgery.MOD_ID, name), function.apply(new Item.Settings().registryKey(keyOfItem(name))));
     }
